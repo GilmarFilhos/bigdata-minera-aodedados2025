@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Grid Estatico - Aula 2</title>
+    
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 20px;
+        }
+
+      canvas {
+        border: 2px solid #333;
+        background-color: #f9f9f9;
+      }
+
+
+    </style>
+    
+    </head>
+
+
+
+
+
+    <body>
+
+
+        <h1>Computação Gráfica -Aula: Grid Estatico</h1>
+    
+    <canvas id="areaDesenho" width="800" height="600"></canvas>
+    
+    <div>
+        <p><strong>Especificação do grid</strong></p>
+   
+   
+   
+   <ul>
+    <li>Espeçamento: 50px</li>
+    <li>Cor: Cinza claro (#cccccc)</li>S
+    <li>Espessura: 1pixel</li>   
+
+
+</ul>
+   
+   
+   
+    </div>
+    
+   
+    <script>
+        const canvas = document.getElementById('areaDesenho');
+        const ctx = canvas.getContext('2d');
+    
+        function desenharGrid() {
+            ctx.clearRect('0,0,  canvas.width, canvas.height');
+
+
+
+ctx.strokeStyle = '#cccccc';
+ctx.LineWidth = 1;
+
+const espacamento = 50;
+
+for (let x = 0; x <= canvas.width; x += espacamento) {
+    ctx.beginPatch();
+    ctx.moveTo(x,0);
+    ctx.lineTo(x, canvas.height);
+    ctx.stroke();
+
+}
+
+for (let  y = 0; x <= canvas.height; y += espacamento) {
+    ctx.beginPath();
+    ctx.moveTo(0, y);
+    ctx.lineTo(canvas.width, y);
+    ctx.stroke();
+
+}
+
+console.log('Grid desenhando com espaçamento de', espaçamento, 'pixels');
+
+
+        }
+
+desenharGrid();
+
+    </script>
+
+
+    
+    
+    </body>
+</html>
