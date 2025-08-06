@@ -1,11 +1,11 @@
 # bigdata-minera-aodedados2025
 
+***CRIADO POR***
+````Gilmar filho```
 
-autor
 
-Gilmar filhp
-
-```Data
+Data
+```
 
 05/08/2025
 ```
@@ -15,3 +15,7 @@ Professor
 ````
 Marcio
 ````
+
+QUAL FACULDADE:
+
+***FACULDADE GRAN TIETÊ***
