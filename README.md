@@ -1,0 +1,1 @@
+# bigdata-minera-aodedados2025
